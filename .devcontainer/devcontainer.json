@@ -1,16 +1,9 @@
 {
   "name": "kubernetes-tutorial-basic",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "dockerfile",
     "args": { "KIND_VERSION": "0.14.0" }
   },
   "mounts": ["type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"],
-
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
-  },
-
   "remoteUser": "root"
 }
